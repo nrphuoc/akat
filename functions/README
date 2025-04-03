@@ -1,0 +1,27 @@
+📦 AKA PLATFORM – Hệ thống AI SaaS đa nền tảng cho doanh nghiệp
+├── Ingestion Layer         # Nhận dữ liệu từ webhook, API nền tảng
+├── AI Service Layer        # Phân tích nội dung, AI Agent, intent, vector
+├── Automation Layer        # Rule-based + AI trigger + action
+├── Scheduler Layer         # Cron, định kỳ: sync, báo cáo, gửi tin
+├── Internal API Layer      # API cho frontend, role-based, RLS-safe
+├── Caching Layer           # Redis
+├── Integration Layer       # Token, webhook, config kết nối hệ thống ngoài
+├── Notification Layer      # Email, Zalo, Lark, Slack... (gửi + nhận)
+└── Metrics Layer           # Tạo, Phân tích nội dung, lưu metrics
+├── React SPA Dashboard     # Site UI, Admin UI cho doanh nghiệp sử dụng
+├── Unified Data Layer      # Toàn bộ dữ liệu Postgres + Storage + Vector
+
+
+📦 AKA PLATFORM – Hệ thống AI SaaS đa nền tảng cho doanh nghiệp (Đặc Tả)
+├── Ingestion Layer         # Supabase Realtime, Edge Function (webhook, API)
+├── AI Service Layer        # Supabase Vector, Langchain Cloud  (AI Agent), Supabase AI API
+├── Automation Layer        # Supabase DB, Edge Function (rule, action)
+├── Scheduler Layer         # Supabase Schedule (cron, định kỳ)
+├── Internal API Layer      # Edge Function (auth, logic, RLS-safe)
+├── Caching Layer           # Redis (API cache, dashboard, vector)
+├── Integration Layer       # Supabase DB, Edge Function (token, webhook)
+├── Notification Layer      # Supabase + Edge Function (email, zalo, lark)
+└── Metrics Layer  			# Supabase + Edge Function + Postgres + React + Power BI
+├── React SPA Dashboard     # React (UI )
+└── Unified Data Layer      # Supabase Postgres, Storage, Vector
+Các Edge này đựa chia thành các layer hoàn chỉnh, gồm các hàm dùng chung, gọi lại thôi.
